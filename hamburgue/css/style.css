@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/assets/hambúrguer\ com\ fundo.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 290px;
+  min-height: 400px;
+  position: absolute;
+  background-position: center;
+  backdrop-filter: 8px;
+  top: 17%;
+  left: 38%;
+  border: solid 5px;
+  border-radius: 16px;
+  padding: 66px 16px 16px 16px;
+  background-color: #000000c0;
+}
+
+h1 {
+  color: rgb(179, 52, 13);
+  text-align: center;
+}
+li {
+  color: rgb(179, 52, 13);
+}
+
+p {
+  color: rgb(179, 52, 13);
+}
+
+.perfil {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  overflow: hidden;
+  perspective: 1000px;
+  background-color: #000000;
+}
+
+.foto,
+.logo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.foto {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.logo {
+  transform: rotateY(180deg);
+}
+
+.perfil:hover .foto {
+  transform: rotateY(180deg);
+}
+
+.perfil:hover .logo {
+  transform: rotateY(360deg);
+}
+
+UL {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: rgb(156, 1, 1);
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(179, 52, 13);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+a:hover {
+  border: 3px solid rgb(179, 52, 13);
+  font-size: 20px;
+}
+
+i {
+  margin-right: 8px;
+}
